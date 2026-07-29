@@ -66,6 +66,12 @@
     <div class="mission-adapt" id="adaptBox" style="display:none;"></div>
     <button class="complete-btn" id="completeBtn">Mark Today Complete</button>
   </div>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-label">Phase</div><div class="stat-num" id="qsPhase" style="font-size:16px;">—</div></div>
+    <div class="stat-card"><div class="stat-label">Week</div><div class="stat-num" id="qsWeek" style="font-size:16px;">—</div></div>
+    <div class="stat-card"><div class="stat-label">Next Session</div><div class="stat-num" id="qsNextSession" style="font-size:14px;">—</div></div>
+    <div class="stat-card"><div class="stat-label">Location</div><div class="stat-num" id="qsLocation" style="font-size:14px;">—</div></div>
+  </div>
 </section>
 
 <!-- WEEK AT A GLANCE -->
@@ -145,14 +151,15 @@
   </div>
 </section>
 
-<!-- THIS WEEK SUMMARY (Jeff-style) -->
+<!-- THIS WEEK SUMMARY (mirrors Jeff's dashboard) -->
 <section class="block" id="thisweek">
   <div class="block-head"><div class="block-title">This Week</div></div>
-  <div class="card">
-    <div class="nutri-row"><span class="nlabel">Phase</span><span class="nval" id="twPhase">—</span></div>
-    <div class="nutri-row"><span class="nlabel">Week</span><span class="nval" id="twWeekNum">—</span></div>
-    <div class="nutri-row"><span class="nlabel">Next Session</span><span class="nval" id="twNextSession">—</span></div>
-    <div class="nutri-row"><span class="nlabel">Location</span><span class="nval" id="twLocation">—</span></div>
+  <div class="tw-card">
+    <div class="tw-header">
+      <div class="tw-weeknum" id="twWeekNum">Week — of —</div>
+      <div class="tw-daterange" id="twDateRange">—</div>
+    </div>
+    <div class="tw-updated">Updated each Monday. Sessions adjust mid-week based on your daily check-in.</div>
   </div>
 </section>
 

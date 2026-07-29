@@ -461,6 +461,47 @@ section.block {
   line-height: 1.5;
 }
 
+/* Full week day blocks — Day, Date, Type, Details */
+.week-day-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+.week-day-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+.week-day-block.today {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1.5px var(--accent), 0 0 16px var(--accent-glow);
+}
+.wdb-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.wdb-daydate {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--text);
+}
+.week-day-block.today .wdb-daydate { color: var(--accent); }
+.wdb-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 8px 0 6px;
+}
+.wdb-details {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
 /* Readiness meters */
 .meter-grid { display: flex; flex-direction: column; gap: 14px; }
 .meter-row label {
@@ -570,6 +611,9 @@ tr.race-highlight td.hl { color: var(--accent); }
   color: var(--accent);
   margin-bottom: 6px;
 }
+.plan-block.active .plan-block-tag {
+  color: var(--good);
+}
 .plan-block-title {
   font-size: 16px;
   font-weight: 800;
@@ -627,6 +671,12 @@ tr.race-highlight td.hl { color: var(--accent); }
 }
 
 /* Nutrition */
+.nutrition-goal-line {
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 700;
+  margin-top: 4px;
+}
 .nutri-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
 .nutri-row:last-child { border-bottom: none; }
 .nutri-row .nlabel { color: var(--text-dim); }
@@ -636,28 +686,28 @@ tr.race-highlight td.hl { color: var(--accent); }
 
 .nutri-circle-row {
   display: flex;
-  justify-content: space-between;
-  gap: 6px;
-  margin-bottom: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
 }
 .nutri-circle {
-  flex: 1 1 0;
+  flex: 0 0 auto;
+  width: clamp(160px, 80vw, 336px);
   aspect-ratio: 1 / 1;
-  max-width: 84px;
-  margin: 0 auto;
   border-radius: 50%;
   background: var(--bg-card);
-  border: 1.5px solid var(--accent);
-  box-shadow: 0 0 10px var(--accent-glow);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6px;
+  padding: 24px;
 }
 .nc-label {
-  font-size: 10.5px;
+  font-size: 24px;
   font-weight: 800;
   color: var(--accent);
   text-transform: uppercase;
@@ -665,10 +715,10 @@ tr.race-highlight td.hl { color: var(--accent); }
   line-height: 1.2;
 }
 .nc-val {
-  font-size: 8.5px;
+  font-size: 15px;
   color: var(--text-dim);
-  line-height: 1.25;
-  margin-top: 4px;
+  line-height: 1.35;
+  margin-top: 8px;
 }
 
 /* Log */

@@ -58,7 +58,6 @@ function init() {
   renderCountdown(today);
   renderMission(today);
   renderWeekStrip(today);
-  renderThisWeekSummary(today);
   renderCheckinForm(today);
   renderEodForm(today);
   renderWeight();
@@ -221,6 +220,26 @@ function renderWeekStrip(today) {
   scroll.querySelectorAll('.tw-day-card').forEach(card => {
     card.addEventListener('click', () => openWeekModal(+card.getAttribute('data-week')));
   });
+
+  renderWeekDayBlocks(today, week);
+}
+
+// ---------- Full Week Day Blocks — Day, Date, Type, full Details ----------
+function renderWeekDayBlocks(today, week) {
+  const blocks = document.getElementById('weekDayBlocks');
+  if (!week) { blocks.innerHTML = ''; return; }
+  blocks.innerHTML = week.days.map(d => {
+    const isToday = d.date === today;
+    const dow = new Date(d.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
+    return `<div class="week-day-block ${isToday ? 'today' : ''}">
+      <div class="wdb-head">
+        <span class="wdb-daydate">${dow} · ${fmtDateShort(d.date)}</span>
+        <span class="badge ${TYPE_BADGE_CLASS[d.type] || ''}">${TYPE_LABEL[d.type] || d.type}</span>
+      </div>
+      <div class="wdb-title">${d.title}</div>
+      <div class="wdb-details">${d.details || ''}</div>
+    </div>`;
+  }).join('');
 }
 
 // ---------- This Week Summary (Jeff-style) ----------
@@ -235,24 +254,6 @@ const LOCATION_MAP = {
   travel: 'On the Road',
   light: 'Hotel / Wherever You Are',
 };
-
-function renderThisWeekSummary(today) {
-  // Find the next session: the next day strictly after today across all weeks
-  let next = null;
-  for (const w of PLAN.weeks) {
-    for (const d of w.days) {
-      if (d.date > today) { next = d; break; }
-    }
-    if (next) break;
-  }
-
-  if (next) {
-    const dow = new Date(next.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
-    document.getElementById('qsNextSession').textContent = `${dow} — ${next.title}`;
-  } else {
-    document.getElementById('qsNextSession').textContent = 'Plan complete';
-  }
-}
 
 // ---------- Check-in Form ----------
 function renderCheckinForm(today) {

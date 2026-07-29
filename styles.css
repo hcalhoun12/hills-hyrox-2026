@@ -184,14 +184,14 @@ nav.tabs a:hover { color: var(--text); border-color: var(--accent); }
   flex-wrap: wrap;
 }
 .hero-chip {
-  font-size: 11.5px;
+  font-size: 14.5px;
   color: var(--text-dim);
   background: var(--bg-card);
   border: 1px solid var(--border);
-  padding: 6px 12px;
+  padding: 9px 16px;
   border-radius: 999px;
 }
-.hero-chip b { color: var(--text); font-weight: 700; }
+.hero-chip b { color: var(--text); font-weight: 800; }
 
 /* Sections & Cards */
 section.block {
@@ -221,6 +221,10 @@ section.block {
   font-size: 11.5px;
   color: var(--text-faint);
 }
+
+/* Bigger date/title/chips for Today's Task, per Hillary's request */
+#today .block-eyebrow { font-size: 14px; letter-spacing: 1px; }
+#today .block-title { font-size: 21px; }
 
 .card {
   background: var(--bg-card);

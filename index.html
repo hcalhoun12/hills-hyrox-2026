@@ -14,7 +14,7 @@
 
 <header class="topbar">
   <div class="brand-block">
-    <div class="brand"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;margin-right:5px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HYROX <span>// NASHVILLE 2026</span></div>
+    <div class="brand"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" style="vertical-align:-7px;margin-right:6px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HILL'S HYROX <span>// NASHVILLE 2026</span></div>
   </div>
   <nav class="tabs">
     <a href="#week">This Week</a>
@@ -27,6 +27,7 @@
     <a href="#stations">Stations</a>
     <a href="#nutrition">Nutrition</a>
     <a href="#races">Races</a>
+    <a href="#coach">Coach</a>
   </nav>
 </header>
 
@@ -67,7 +68,7 @@
   </div>
 </section>
 
-<!-- THIS WEEK -->
+<!-- WEEK AT A GLANCE -->
 <section class="block" id="week">
   <div class="block-head">
     <div class="block-title">Week at a Glance</div>
@@ -141,6 +142,17 @@
     </div>
     <button class="save-btn" id="saveEodBtn">Save End of Day Log</button>
     <div id="eodHistory" style="margin-top:14px;"></div>
+  </div>
+</section>
+
+<!-- THIS WEEK SUMMARY (Jeff-style) -->
+<section class="block" id="thisweek">
+  <div class="block-head"><div class="block-title">This Week</div></div>
+  <div class="card">
+    <div class="nutri-row"><span class="nlabel">Phase</span><span class="nval" id="twPhase">—</span></div>
+    <div class="nutri-row"><span class="nlabel">Week</span><span class="nval" id="twWeekNum">—</span></div>
+    <div class="nutri-row"><span class="nlabel">Next Session</span><span class="nval" id="twNextSession">—</span></div>
+    <div class="nutri-row"><span class="nlabel">Location</span><span class="nval" id="twLocation">—</span></div>
   </div>
 </section>
 
@@ -271,6 +283,15 @@
       <tbody id="raceCalendarBody"></tbody>
     </table>
   </div>
+</section>
+
+<!-- COACH'S NOTES -->
+<section class="block" id="coach">
+  <div class="block-head">
+    <div class="block-title">Coach's Notes</div>
+    <div class="block-note">Updated each week</div>
+  </div>
+  <div id="coachNotes"></div>
 </section>
 
 <footer class="foot">HILL'S HYROX 2026 · Women's Doubles w/ Corrie · Sub-1:30 · Let's go</footer>

@@ -58,6 +58,7 @@ function init() {
   renderCountdown(today);
   renderMission(today);
   renderWeekStrip(today);
+  renderThisWeekSummary(today);
   renderCheckinForm(today);
   renderEodForm(today);
   renderWeight();
@@ -65,6 +66,7 @@ function init() {
   renderPlanAccordion();
   renderWorkoutLog();
   renderRaceCalendar();
+  renderCoachNotes();
 }
 
 // ---------- Countdown Ring ----------
@@ -208,6 +210,45 @@ function renderWeekStrip(today) {
       <div class="dot ${dotClass}"></div>
     </div>`;
   }).join('');
+}
+
+// ---------- This Week Summary (Jeff-style) ----------
+const LOCATION_MAP = {
+  otf: 'Orangetheory Studio',
+  hyrox: 'ATC / Crunch',
+  strength: 'Home',
+  run: 'Outside / Treadmill',
+  partner: 'Gym w/ Corrie',
+  rest: '—',
+  race: 'Race Site',
+  travel: 'On the Road',
+  light: 'Hotel / Wherever You Are',
+};
+
+function renderThisWeekSummary(today) {
+  const week = findWeek(today);
+  const totalWeeks = PLAN.weeks.length;
+
+  document.getElementById('twPhase').textContent = week ? week.phase : '—';
+  document.getElementById('twWeekNum').textContent = week ? `${week.week} of ${totalWeeks}` : '—';
+
+  // Find the next session: the next day strictly after today across all weeks
+  let next = null;
+  for (const w of PLAN.weeks) {
+    for (const d of w.days) {
+      if (d.date > today) { next = d; break; }
+    }
+    if (next) break;
+  }
+
+  if (next) {
+    const dow = new Date(next.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
+    document.getElementById('twNextSession').textContent = `${dow} — ${next.title}`;
+    document.getElementById('twLocation').textContent = LOCATION_MAP[next.type] || '—';
+  } else {
+    document.getElementById('twNextSession').textContent = 'Plan complete';
+    document.getElementById('twLocation').textContent = '—';
+  }
 }
 
 // ---------- Check-in Form ----------
@@ -453,5 +494,21 @@ function renderRaceCalendar() {
   }));
   tbody.innerHTML = races.map(r => `
     <tr><td class="hl">${fmtDate(r.date)}</td><td>${r.title.replace('RACE DAY — ', '').replace('Road Race — ','')}</td><td>${r.type === 'race' && r.title.includes('Hyrox') ? 'Hyrox' : ''}</td></tr>
+  `).join('');
+}
+
+// ---------- Coach's Notes ----------
+function renderCoachNotes() {
+  const el = document.getElementById('coachNotes');
+  const notes = (PLAN.coachNotes || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  if (!notes.length) {
+    el.innerHTML = '<div class="empty-state">No notes yet — check back after your first weekly check-in.</div>';
+    return;
+  }
+  el.innerHTML = notes.map(n => `
+    <div class="card" style="margin-bottom:10px;">
+      <div class="block-eyebrow" style="margin-bottom:8px;">${fmtDate(n.date)}</div>
+      <div class="mission-body" style="line-height:1.6;">${n.text}</div>
+    </div>
   `).join('');
 }

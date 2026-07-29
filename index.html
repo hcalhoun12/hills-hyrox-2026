@@ -17,7 +17,7 @@
     <div class="brand"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" style="vertical-align:-7px;margin-right:6px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HILL'S HYROX <span>// NASHVILLE 2026</span></div>
   </div>
   <nav class="tabs">
-    <a href="#week">This Week</a>
+    <a href="#thisweek">This Week</a>
     <a href="#readiness">Readiness</a>
     <a href="#endofday">End of Day</a>
     <a href="#weight">Weight</a>
@@ -66,21 +66,6 @@
     <div class="mission-adapt" id="adaptBox" style="display:none;"></div>
     <button class="complete-btn" id="completeBtn">Mark Today Complete</button>
   </div>
-  <div class="stat-grid">
-    <div class="stat-card"><div class="stat-label">Phase</div><div class="stat-num" id="qsPhase" style="font-size:16px;">—</div></div>
-    <div class="stat-card"><div class="stat-label">Week</div><div class="stat-num" id="qsWeek" style="font-size:16px;">—</div></div>
-    <div class="stat-card"><div class="stat-label">Next Session</div><div class="stat-num" id="qsNextSession" style="font-size:14px;">—</div></div>
-    <div class="stat-card"><div class="stat-label">Location</div><div class="stat-num" id="qsLocation" style="font-size:14px;">—</div></div>
-  </div>
-</section>
-
-<!-- WEEK AT A GLANCE -->
-<section class="block" id="week">
-  <div class="block-head">
-    <div class="block-title">Week at a Glance</div>
-    <div class="block-note" id="weekRangeLabel"></div>
-  </div>
-  <div class="week-strip" id="weekStrip"></div>
 </section>
 
 <!-- READINESS -->
@@ -151,16 +136,24 @@
   </div>
 </section>
 
-<!-- THIS WEEK SUMMARY (mirrors Jeff's dashboard) -->
+<!-- THIS WEEK (mirrors Jeff's dashboard layout) -->
 <section class="block" id="thisweek">
-  <div class="block-head"><div class="block-title">This Week</div></div>
-  <div class="tw-card">
-    <div class="tw-header">
-      <div class="tw-weeknum" id="twWeekNum">Week — of —</div>
-      <div class="tw-daterange" id="twDateRange">—</div>
+  <div class="tw-stats-strip">
+    <div class="tw-stats-bar"></div>
+    <div class="tw-stats-inner">
+      <div class="tw-stat-item" id="qsPhase">—</div>
+      <div class="tw-stat-item" id="qsWeek">—</div>
+      <div class="tw-stat-item" id="qsDuration">—</div>
+      <div class="tw-stat-item" id="qsLocation">—</div>
+      <div class="tw-stat-item" id="qsNextSession">—</div>
     </div>
-    <div class="tw-updated">Updated each Monday. Sessions adjust mid-week based on your daily check-in.</div>
   </div>
+
+  <div class="tw-heading">This Week</div>
+
+  <div class="tw-day-scroll" id="weekDayCards"></div>
+
+  <div class="tw-note">Updated each Monday. Sessions adjust mid-week based on your daily check-in.</div>
 </section>
 
 <!-- WEIGHT -->

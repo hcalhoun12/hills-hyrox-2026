@@ -108,6 +108,10 @@ const TYPE_LABEL = {
   run: 'Run', partner: 'Partner Day', race: 'Race Day', travel: 'Travel', light: 'Light Session'
 };
 const TYPE_BADGE_CLASS = { rest: 'rest', race: 'race', partner: 'partner' };
+const DURATION_MAP = {
+  otf: '60 min', hyrox: '60-75 min', strength: '45 min', run: 'up to 60 min',
+  partner: '60-90 min', rest: '—', race: 'Race Day', travel: '20-30 min', light: '30-40 min',
+};
 
 // ---------- Today's Mission ----------
 function renderMission(today) {
@@ -191,26 +195,35 @@ function renderMission(today) {
   }
 }
 
-// ---------- Week Strip ----------
+// ---------- Week Day Cards (mirrors Jeff's dashboard) ----------
 function renderWeekStrip(today) {
   const week = findWeek(today);
-  const strip = document.getElementById('weekStrip');
-  const rangeLabel = document.getElementById('weekRangeLabel');
-  if (!week) { strip.innerHTML = ''; rangeLabel.textContent = ''; return; }
-  rangeLabel.textContent = `Week ${week.week} · ${fmtDateShort(week.startDate)}–${fmtDateShort(week.endDate)}`;
-  strip.className = 'week-strip';
-  strip.innerHTML = week.days.map(d => {
+  const scroll = document.getElementById('weekDayCards');
+  if (!week) { scroll.innerHTML = ''; return; }
+  const log = loadLS(LS_KEYS.workoutLog, {});
+  scroll.innerHTML = week.days.map(d => {
     const isToday = d.date === today;
-    const dowShort = new Date(d.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' });
+    const isDone = !!log[d.date];
+    const dow = new Date(d.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
     const dnum = new Date(d.date + 'T12:00:00').getDate();
-    const dotClass = d.type === 'rest' ? 'rest' : d.type === 'race' ? 'race' : d.type === 'partner' ? 'partner' : '';
-    return `<div class="day-chip ${isToday ? 'today' : ''}">
-      <div class="dow">${dowShort}</div>
-      <div class="dnum">${dnum}</div>
-      <div class="dtype">${TYPE_LABEL[d.type] || d.type}</div>
-      <div class="dot ${dotClass}"></div>
+    const desc = (d.details || '').length > 70 ? d.details.slice(0, 68) + '…' : (d.details || '');
+    return `<div class="tw-day-card ${isToday ? 'today' : ''}" data-week="${week.week}">
+      <div class="tw-dc-top">
+        <span class="tw-dc-dow">${dow}</span>
+        ${isDone ? '<span class="tw-dc-check">✓</span>' : ''}
+      </div>
+      <div class="tw-dc-date">${dnum}</div>
+      <span class="tw-dc-badge ${TYPE_BADGE_CLASS[d.type] || ''}">${TYPE_LABEL[d.type] || d.type}</span>
+      <div class="tw-dc-title">${d.title}</div>
+      <div class="tw-dc-desc">${desc}</div>
+      <div class="tw-dc-dur">${DURATION_MAP[d.type] || ''}</div>
+      <div class="tw-dc-tap">tap for full workout</div>
     </div>`;
   }).join('');
+
+  scroll.querySelectorAll('.tw-day-card').forEach(card => {
+    card.addEventListener('click', () => openWeekModal(+card.getAttribute('data-week')));
+  });
 }
 
 // ---------- This Week Summary (Jeff-style) ----------
@@ -230,12 +243,12 @@ function renderThisWeekSummary(today) {
   const week = findWeek(today);
   const totalWeeks = PLAN.weeks.length;
 
-  // "This Week" header card — mirrors Jeff's: title + week range + note only
-  document.getElementById('twWeekNum').textContent = week ? `Week ${week.week} of ${totalWeeks}` : 'Week — of —';
-  document.getElementById('twDateRange').textContent = week ? `${fmtDateShort(week.startDate)}–${fmtDateShort(week.endDate)}` : '—';
+  // Phase index, e.g. "1 — Base Building"
+  const phaseOrder = [];
+  PLAN.weeks.forEach(w => { if (!phaseOrder.includes(w.phase)) phaseOrder.push(w.phase); });
+  const phaseIdx = week ? phaseOrder.indexOf(week.phase) + 1 : null;
 
-  // Quick stats strip under Today's Task — Phase / Week / Next Session / Location
-  document.getElementById('qsPhase').textContent = week ? week.phase : '—';
+  document.getElementById('qsPhase').textContent = week ? `${phaseIdx} — ${week.phase}` : '—';
   document.getElementById('qsWeek').textContent = week ? `${week.week} of ${totalWeeks}` : '—';
 
   // Find the next session: the next day strictly after today across all weeks
@@ -251,9 +264,11 @@ function renderThisWeekSummary(today) {
     const dow = new Date(next.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
     document.getElementById('qsNextSession').textContent = `${dow} — ${next.title}`;
     document.getElementById('qsLocation').textContent = LOCATION_MAP[next.type] || '—';
+    document.getElementById('qsDuration').textContent = DURATION_MAP[next.type] || '—';
   } else {
     document.getElementById('qsNextSession').textContent = 'Plan complete';
     document.getElementById('qsLocation').textContent = '—';
+    document.getElementById('qsDuration').textContent = '—';
   }
 }
 

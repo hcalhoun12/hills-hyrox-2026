@@ -400,9 +400,18 @@ function renderBenchmarks() {
   };
 }
 
-// ---------- Plan Accordion ----------
+// ---------- Plan Blocks ----------
+const PHASE_SUMMARIES = {
+  'Base Building': "Ramp in with moderate volume. Learn sled push/pull and ski erg technique from scratch, build the aerobic base, and establish movement patterns for lunges and burpees. 3x Orangetheory, a dedicated Hyrox station day, weekend partner training with Corrie, and easy long runs.",
+  'Build — Strength & Aerobic': "Volume and load climb. The 10K checkpoints from the road race series test real fitness gains. Strength work builds toward race-weight stations, running mileage increases.",
+  'Race-Specific / Intensity': "Heavier station work at race-effort loads, run-into-station bricks, and 10-mile long runs. Doubles race-craft coaching (official rules, transitions, hand-off strategy) kicks in on Hyrox and partner days.",
+  'Peak Endurance': "The biggest aerobic stimulus of the whole build — two half marathons test race-day endurance. The Salem trip drops in as a built-in mini-taper right before the first one.",
+  'Sharpen & Taper': "Race-pace work replaces raw volume. The Nashville concert weekend doubles as a light trip. Legs get fresh heading into race week.",
+  'Race Week': "Final taper, light shakeout sessions, then race day — Hyrox Nashville, December 10th. Trust the training.",
+};
+
 function renderPlanAccordion() {
-  const acc = document.getElementById('planAccordion');
+  const container = document.getElementById('planBlocks');
   const phases = [];
   const phaseMap = {};
   PLAN.weeks.forEach(w => {
@@ -415,38 +424,19 @@ function renderPlanAccordion() {
   const today = todayISO();
   const currentWeek = findWeek(today);
 
-  acc.innerHTML = phases.map(p => {
+  container.innerHTML = phases.map((p, i) => {
     const isCurrentPhase = currentWeek && currentWeek.phase === p.name;
+    const isPast = currentWeek ? p.weeks[p.weeks.length - 1].week < currentWeek.week : today > p.weeks[p.weeks.length - 1].endDate;
+    const status = isCurrentPhase ? 'Active Now' : isPast ? 'Complete' : 'Upcoming';
     return `
-    <div class="phase-group ${isCurrentPhase ? 'open' : ''}" data-phase="${p.name}">
-      <div class="phase-head">
-        <div>
-          <div class="ptitle">${p.name}</div>
-          <div class="pdates">${fmtDateShort(p.weeks[0].startDate)} – ${fmtDateShort(p.weeks[p.weeks.length - 1].endDate)} · ${p.weeks.length} weeks</div>
-        </div>
-        <div class="chev">▾</div>
-      </div>
-      <div class="phase-body">
-        ${p.weeks.map(w => `
-          <div class="week-row" data-week="${w.week}" style="cursor:pointer;">
-            <span class="wk">Week ${w.week}${currentWeek && currentWeek.week === w.week ? ' · Active Now' : ''}</span>
-            <span class="wdates">${fmtDateShort(w.startDate)}–${fmtDateShort(w.endDate)}</span>
-          </div>
-        `).join('')}
-      </div>
+    <div class="plan-block">
+      <div class="plan-block-tag">Phase ${i + 1} · Weeks ${p.weeks[0].week}–${p.weeks[p.weeks.length - 1].week}</div>
+      <div class="plan-block-title">${p.name}</div>
+      <div class="plan-block-dates">${fmtDateShort(p.weeks[0].startDate)} – ${fmtDateShort(p.weeks[p.weeks.length - 1].endDate)}, 2026</div>
+      <div class="plan-block-summary">${PHASE_SUMMARIES[p.name] || ''}</div>
+      <div class="plan-block-status status-${status.replace(/\s+/g, '').toLowerCase()}">${status}</div>
     </div>`;
   }).join('');
-
-  acc.querySelectorAll('.phase-head').forEach(h => {
-    h.addEventListener('click', () => h.parentElement.classList.toggle('open'));
-  });
-  acc.querySelectorAll('.week-row').forEach(row => {
-    row.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const wn = +row.getAttribute('data-week');
-      openWeekModal(wn);
-    });
-  });
 }
 
 function openWeekModal(weekNum) {
@@ -497,9 +487,10 @@ function renderRaceCalendar() {
   PLAN.weeks.forEach(w => w.days.forEach(d => {
     if (d.raceDay) races.push(d);
   }));
-  tbody.innerHTML = races.map(r => `
-    <tr><td class="hl">${fmtDate(r.date)}</td><td>${r.title.replace('RACE DAY — ', '').replace('Road Race — ','')}</td><td>${r.type === 'race' && r.title.includes('Hyrox') ? 'Hyrox' : ''}</td></tr>
-  `).join('');
+  tbody.innerHTML = races.map(r => {
+    const isHyrox = r.title.includes('Hyrox');
+    return `<tr class="${isHyrox ? 'race-highlight' : ''}"><td class="hl">${fmtDate(r.date)}</td><td>${r.title.replace('RACE DAY — ', '').replace('Road Race — ','')}</td><td>${isHyrox ? 'Hyrox' : ''}</td></tr>`;
+  }).join('');
 }
 
 // ---------- Coach's Notes ----------

@@ -133,10 +133,13 @@ nav.tabs a:hover { color: var(--text); border-color: var(--accent); }
 
 .ring-wrap {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 270px;
+  height: 270px;
+  max-width: 82vw;
+  max-height: 82vw;
   margin: 0 auto 6px;
 }
+.ring-wrap svg { width: 100%; height: 100%; }
 .ring-wrap svg { transform: rotate(-90deg); }
 .ring-track { fill: none; stroke: var(--border); stroke-width: 10; }
 .ring-progress {
@@ -156,24 +159,24 @@ nav.tabs a:hover { color: var(--text); border-color: var(--accent); }
   justify-content: center;
 }
 .ring-days {
-  font-size: 52px;
+  font-size: 66px;
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   color: var(--accent);
   text-shadow: 0 0 18px var(--accent-glow);
 }
 .ring-label {
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--text-dim);
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .ring-sub {
-  font-size: 12px;
+  font-size: 13.5px;
   color: var(--text-faint);
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .hero-meta {
@@ -558,21 +561,31 @@ tr:last-child td { border-bottom: none; }
 .week-row .wk { color: var(--text); font-weight: 600; }
 .week-row .wdates { color: var(--text-faint); font-size: 11px; }
 
-/* Station cards */
-.station-list { display: flex; flex-direction: column; gap: 8px; }
-.station-item {
-  display: flex; align-items: center; gap: 12px;
-  background: var(--bg-card); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 12px 14px;
+/* Station blocks */
+.station-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.station-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
 }
 .station-num {
-  flex: 0 0 26px; height: 26px; border-radius: 50%;
+  width: 26px; height: 26px; border-radius: 50%;
   background: var(--accent-soft); color: var(--accent);
   display: flex; align-items: center; justify-content: center;
   font-size: 12px; font-weight: 800;
+  margin-bottom: 10px;
 }
 .station-name { font-size: 13.5px; font-weight: 700; }
-.station-spec { font-size: 11.5px; color: var(--text-faint); margin-top: 2px; }
+.station-spec { font-size: 11px; color: var(--text-faint); margin-top: 4px; line-height: 1.4; }
+.station-target { font-size: 11.5px; color: var(--accent); font-weight: 700; margin-top: 6px; }
+@media (max-width: 400px) {
+  .station-grid { grid-template-columns: 1fr; }
+}
 
 /* Nutrition */
 .nutri-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }

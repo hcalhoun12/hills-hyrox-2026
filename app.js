@@ -81,14 +81,11 @@ function renderCountdown(today) {
   document.getElementById('weeksLeftSub').textContent = daysLeft >= 0 ? `${weeksLeft} weeks to go` : 'Race day has passed';
   document.getElementById('weeksLeftNum2').textContent = daysLeft >= 0 ? weeksLeft : '—';
 
-  const circumference = 2 * Math.PI * 98;
+  const circumference = 2 * Math.PI * 122;
   const offset = circumference * (1 - pct);
   const ring = document.getElementById('ringProgress');
   ring.setAttribute('stroke-dasharray', circumference);
   ring.setAttribute('stroke-dashoffset', daysLeft >= 0 ? offset : 0);
-
-  const week = findWeek(today);
-  document.getElementById('phaseChip').innerHTML = `Phase: <b>${week ? week.phase : '—'}</b>`;
 }
 
 // ---------- Find today's data ----------
@@ -240,17 +237,6 @@ const LOCATION_MAP = {
 };
 
 function renderThisWeekSummary(today) {
-  const week = findWeek(today);
-  const totalWeeks = PLAN.weeks.length;
-
-  // Phase index, e.g. "1 — Base Building"
-  const phaseOrder = [];
-  PLAN.weeks.forEach(w => { if (!phaseOrder.includes(w.phase)) phaseOrder.push(w.phase); });
-  const phaseIdx = week ? phaseOrder.indexOf(week.phase) + 1 : null;
-
-  document.getElementById('qsPhase').textContent = week ? `${phaseIdx} — ${week.phase}` : '—';
-  document.getElementById('qsWeek').textContent = week ? `${week.week} of ${totalWeeks}` : '—';
-
   // Find the next session: the next day strictly after today across all weeks
   let next = null;
   for (const w of PLAN.weeks) {
@@ -263,11 +249,9 @@ function renderThisWeekSummary(today) {
   if (next) {
     const dow = new Date(next.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
     document.getElementById('qsNextSession').textContent = `${dow} — ${next.title}`;
-    document.getElementById('qsLocation').textContent = LOCATION_MAP[next.type] || '—';
     document.getElementById('qsDuration').textContent = DURATION_MAP[next.type] || '—';
   } else {
     document.getElementById('qsNextSession').textContent = 'Plan complete';
-    document.getElementById('qsLocation').textContent = '—';
     document.getElementById('qsDuration').textContent = '—';
   }
 }

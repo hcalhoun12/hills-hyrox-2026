@@ -12,23 +12,23 @@
 </head>
 <body>
 
-<header class="top">
-  <div class="brand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;margin-right:6px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HILL'S <span>HYROX</span> 2026</div>
-  <div class="race-sub">Hyrox Nashville · Dec 10, 2026 · Women's Doubles w/ Corrie</div>
+<header class="topbar">
+  <div class="brand-block">
+    <div class="brand"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;margin-right:5px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HYROX <span>// NASHVILLE 2026</span></div>
+  </div>
+  <nav class="tabs">
+    <a href="#week">This Week</a>
+    <a href="#readiness">Readiness</a>
+    <a href="#endofday">End of Day</a>
+    <a href="#weight">Weight</a>
+    <a href="#benchmarks">Benchmarks</a>
+    <a href="#plan">Plan</a>
+    <a href="#log">Log</a>
+    <a href="#stations">Stations</a>
+    <a href="#nutrition">Nutrition</a>
+    <a href="#races">Races</a>
+  </nav>
 </header>
-
-<nav class="tabs">
-  <a href="#week">This Week</a>
-  <a href="#readiness">Readiness</a>
-  <a href="#endofday">End of Day</a>
-  <a href="#weight">Weight</a>
-  <a href="#benchmarks">Benchmarks</a>
-  <a href="#plan">Plan</a>
-  <a href="#log">Log</a>
-  <a href="#stations">Stations</a>
-  <a href="#nutrition">Nutrition</a>
-  <a href="#races">Races</a>
-</nav>
 
 <div class="hero">
   <div class="ring-wrap">
@@ -54,7 +54,7 @@
   <div class="block-head">
     <div>
       <div class="block-eyebrow">Today · <span id="todayDateLabel">—</span></div>
-      <div class="block-title">Today's Mission</div>
+      <div class="block-title">Today's Task</div>
     </div>
   </div>
   <div class="card">
@@ -218,17 +218,22 @@
     <div class="block-title">Race Stations</div>
     <div class="block-note">Women's Doubles · 8 × 1km run + station</div>
   </div>
-  <div class="station-list">
-    <div class="station-item"><div class="station-num">1</div><div><div class="station-name">Ski Erg</div><div class="station-spec">1000m total · split between partners</div></div></div>
-    <div class="station-item"><div class="station-num">2</div><div><div class="station-name">Sled Push</div><div class="station-spec">50m · 102kg (225 lb) incl. sled</div></div></div>
-    <div class="station-item"><div class="station-num">3</div><div><div class="station-name">Sled Pull</div><div class="station-spec">50m · 78kg (172 lb) incl. sled</div></div></div>
-    <div class="station-item"><div class="station-num">4</div><div><div class="station-name">Burpee Broad Jumps</div><div class="station-spec">80m · bodyweight</div></div></div>
-    <div class="station-item"><div class="station-num">5</div><div><div class="station-name">Rowing</div><div class="station-spec">1000m total · split between partners</div></div></div>
-    <div class="station-item"><div class="station-num">6</div><div><div class="station-name">Farmers Carry</div><div class="station-spec">200m · 2×16kg (35 lb) per hand</div></div></div>
-    <div class="station-item"><div class="station-num">7</div><div><div class="station-name">Sandbag Lunges</div><div class="station-spec">100m · 10kg (22 lb)</div></div></div>
-    <div class="station-item"><div class="station-num">8</div><div><div class="station-name">Wall Balls</div><div class="station-spec">100 reps total · 4kg (9 lb) to 2.7m</div></div></div>
+  <div class="card" style="margin-bottom:12px;">
+    <div class="block-eyebrow" style="margin-bottom:6px;">Sub-1:30 Pacing Target</div>
+    <div class="mission-body" style="margin-bottom:10px;">Running budget: <b style="color:var(--text);">~44:00</b> total (8 × 1km @ ~5:30/km team pace). Station budget: <b style="color:var(--text);">~30:00</b> total. Roxzone transitions: <b style="color:var(--text);">~16:00</b> buffer. That's the shape of a 90-minute team race — adjust as real splits come in from training.</div>
+    <div class="block-note" style="line-height:1.6;">Rule that matters most: run at the pace the <b>slower partner</b> can hold for all 8km, not the pace the faster one wants to run at km 1. Losing 10s/km to run smart beats blowing up and losing 2 minutes at the next station.</div>
   </div>
-  <div class="block-note" style="margin-top:12px;line-height:1.6;">Doubles weights are not halved — you and Corrie move the same load a singles athlete would, splitting reps/distance between you. Confirm exact current standards against the official HYROX rulebook closer to race day.</div>
+  <div class="station-list">
+    <div class="station-item"><div class="station-num">1</div><div><div class="station-name">Ski Erg</div><div class="station-spec">1000m total · split between partners</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~4:45 combined</div></div></div>
+    <div class="station-item"><div class="station-num">2</div><div><div class="station-name">Sled Push</div><div class="station-spec">50m · 102kg (225 lb) incl. sled</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~2:45 combined</div></div></div>
+    <div class="station-item"><div class="station-num">3</div><div><div class="station-name">Sled Pull</div><div class="station-spec">50m · 78kg (172 lb) incl. sled</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~2:15 combined</div></div></div>
+    <div class="station-item"><div class="station-num">4</div><div><div class="station-name">Burpee Broad Jumps</div><div class="station-spec">80m · bodyweight</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~4:15 combined</div></div></div>
+    <div class="station-item"><div class="station-num">5</div><div><div class="station-name">Rowing</div><div class="station-spec">1000m total · split between partners</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~4:15 combined</div></div></div>
+    <div class="station-item"><div class="station-num">6</div><div><div class="station-name">Farmers Carry</div><div class="station-spec">200m · 2×16kg (35 lb) per hand</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~2:15 combined</div></div></div>
+    <div class="station-item"><div class="station-num">7</div><div><div class="station-name">Sandbag Lunges</div><div class="station-spec">100m · 10kg (22 lb)</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~3:45 combined</div></div></div>
+    <div class="station-item"><div class="station-num">8</div><div><div class="station-name">Wall Balls</div><div class="station-spec">100 reps total · 4kg (9 lb) to 2.7m</div><div class="station-spec" style="color:var(--accent);margin-top:2px;">Target: ~5:30 combined</div></div></div>
+  </div>
+  <div class="block-note" style="margin-top:12px;line-height:1.6;">Doubles weights are not halved — you and Corrie move the same load a singles athlete would, splitting reps/distance between you. These targets are directional pacing goals to build toward in training, not official benchmarks — confirm exact current standards against the official HYROX rulebook closer to race day.</div>
 </section>
 
 <!-- NUTRITION -->

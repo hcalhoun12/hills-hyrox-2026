@@ -191,23 +191,28 @@ function renderMission(today) {
   }
 }
 
-// ---------- Week Strip ----------
+// ---------- Week Calendar Summary ----------
 function renderWeekStrip(today) {
   const week = findWeek(today);
   const strip = document.getElementById('weekStrip');
   const rangeLabel = document.getElementById('weekRangeLabel');
   if (!week) { strip.innerHTML = ''; rangeLabel.textContent = ''; return; }
   rangeLabel.textContent = `Week ${week.week} · ${fmtDateShort(week.startDate)}–${fmtDateShort(week.endDate)}`;
+  strip.className = 'week-agenda';
   strip.innerHTML = week.days.map(d => {
     const isToday = d.date === today;
-    const dowShort = new Date(d.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' });
+    const dow = new Date(d.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' });
     const dnum = new Date(d.date + 'T12:00:00').getDate();
-    const dotClass = d.type === 'rest' ? 'rest' : d.type === 'race' ? 'race' : d.type === 'partner' ? 'partner' : '';
-    return `<div class="day-chip ${isToday ? 'today' : ''}">
-      <div class="dow">${dowShort}</div>
-      <div class="dnum">${dnum}</div>
-      <div class="dtype">${TYPE_LABEL[d.type] || d.type}</div>
-      <div class="dot ${dotClass}"></div>
+    return `<div class="week-day-row ${isToday ? 'today' : ''}">
+      <div class="wdr-date">
+        <div class="dow">${dow}</div>
+        <div class="dnum">${dnum}</div>
+      </div>
+      <div class="wdr-info">
+        <span class="badge ${TYPE_BADGE_CLASS[d.type] || ''}">${TYPE_LABEL[d.type] || d.type}</span>
+        <div class="wdr-title">${d.title}</div>
+      </div>
+      ${isToday ? '<div class="wdr-today-tag">Today</div>' : ''}
     </div>`;
   }).join('');
 }

@@ -249,10 +249,8 @@ function renderThisWeekSummary(today) {
   if (next) {
     const dow = new Date(next.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long' });
     document.getElementById('qsNextSession').textContent = `${dow} — ${next.title}`;
-    document.getElementById('qsDuration').textContent = DURATION_MAP[next.type] || '—';
   } else {
     document.getElementById('qsNextSession').textContent = 'Plan complete';
-    document.getElementById('qsDuration').textContent = '—';
   }
 }
 
@@ -429,7 +427,7 @@ function renderPlanAccordion() {
     const isPast = currentWeek ? p.weeks[p.weeks.length - 1].week < currentWeek.week : today > p.weeks[p.weeks.length - 1].endDate;
     const status = isCurrentPhase ? 'Active Now' : isPast ? 'Complete' : 'Upcoming';
     return `
-    <div class="plan-block">
+    <div class="plan-block${isCurrentPhase ? ' active' : ''}">
       <div class="plan-block-tag">Phase ${i + 1} · Weeks ${p.weeks[0].week}–${p.weeks[p.weeks.length - 1].week}</div>
       <div class="plan-block-title">${p.name}</div>
       <div class="plan-block-dates">${fmtDateShort(p.weeks[0].startDate)} – ${fmtDateShort(p.weeks[p.weeks.length - 1].endDate)}, 2026</div>

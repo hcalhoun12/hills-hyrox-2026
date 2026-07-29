@@ -1,0 +1,1475 @@
+{
+  "race": {
+    "name": "Hyrox Nashville",
+    "date": "2026-12-10",
+    "category": "Women's Doubles",
+    "partner": "Corrie",
+    "goal": "Sub-1:30"
+  },
+  "startDate": "2026-08-01",
+  "weeks": [
+    {
+      "week": 1,
+      "phase": "Base Building",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-07",
+      "days": [
+        {
+          "date": "2026-08-01",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-08-02",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 4\u20135 miles @ ~9:45/mi easy, fully conversational \u2014 building the aerobic engine, no heroics yet."
+        },
+        {
+          "date": "2026-08-03",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-04",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC or Crunch (needs sled + ski erg access). Sled PUSH: 4 x 15m empty/light sled (technique only \u2014 flat back, short choppy steps), 90s rest. Sled PULL (rope): 4 x 15m light load, focus on hand-over-hand rhythm. Ski Erg: 5 x 250m @ easy-moderate pace, 90s rest \u2014 focus on hip-hinge pull technique, not speed. Lunges: 3 x 10/leg bodyweight walking lunges (slow, controlled \u2014 ankle stability focus). Burpees: 3 x 8, full range, no rush. Finish with a short posterior-chain add-on: 2 x 10 Romanian deadlifts (hip-hinge, brace core \u2014 protect the lower back) + 2 x 10/side single-arm row (moderate load, watch shoulder overuse)."
+        },
+        {
+          "date": "2026-08-05",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-06",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-08-07",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "phase": "Base Building",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-14",
+      "days": [
+        {
+          "date": "2026-08-08",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-08-09",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 5 Miles",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 5 Miles. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-08-10",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-11",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC or Crunch (needs sled + ski erg access). Sled PUSH: 4 x 15m empty/light sled (technique only \u2014 flat back, short choppy steps), 90s rest. Sled PULL (rope): 4 x 15m light load, focus on hand-over-hand rhythm. Ski Erg: 5 x 250m @ easy-moderate pace, 90s rest \u2014 focus on hip-hinge pull technique, not speed. Lunges: 3 x 10/leg bodyweight walking lunges (slow, controlled \u2014 ankle stability focus). Burpees: 3 x 8, full range, no rush. Finish with a short posterior-chain add-on: 2 x 10 Romanian deadlifts (hip-hinge, brace core \u2014 protect the lower back) + 2 x 10/side single-arm row (moderate load, watch shoulder overuse)."
+        },
+        {
+          "date": "2026-08-12",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-13",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-08-14",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "phase": "Base Building",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-21",
+      "days": [
+        {
+          "date": "2026-08-15",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-08-16",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 4\u20135 miles @ ~9:45/mi easy, fully conversational \u2014 building the aerobic engine, no heroics yet."
+        },
+        {
+          "date": "2026-08-17",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-18",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC or Crunch (needs sled + ski erg access). Sled PUSH: 4 x 15m empty/light sled (technique only \u2014 flat back, short choppy steps), 90s rest. Sled PULL (rope): 4 x 15m light load, focus on hand-over-hand rhythm. Ski Erg: 5 x 250m @ easy-moderate pace, 90s rest \u2014 focus on hip-hinge pull technique, not speed. Lunges: 3 x 10/leg bodyweight walking lunges (slow, controlled \u2014 ankle stability focus). Burpees: 3 x 8, full range, no rush. Finish with a short posterior-chain add-on: 2 x 10 Romanian deadlifts (hip-hinge, brace core \u2014 protect the lower back) + 2 x 10/side single-arm row (moderate load, watch shoulder overuse)."
+        },
+        {
+          "date": "2026-08-19",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-20",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-08-21",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "phase": "Build \u2014 Strength & Aerobic",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-28",
+      "days": [
+        {
+          "date": "2026-08-22",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-08-23",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 5 Miles",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 5 Miles. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-08-24",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-25",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 5 x 20m @ moderate load, 90s rest. Sled PULL: 4 x 20m same load, controlled pace. Ski Erg: 5 x 350m @ moderate-hard, 2 min rest \u2014 drive with legs first, finish with lats. Lunges: 4 x 14/leg holding 10lb kettlebell goblet-style. Burpees: 4 x 12, steady pace, chest to floor. Finish with: 3 x 8 Romanian deadlifts (hip-hinge, brace core) + 2 x 10/side single-arm row + 2 x 10 goblet squats."
+        },
+        {
+          "date": "2026-08-26",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-08-27",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-08-28",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "phase": "Build \u2014 Strength & Aerobic",
+      "startDate": "2026-08-29",
+      "endDate": "2026-09-04",
+      "days": [
+        {
+          "date": "2026-08-29",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-08-30",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 6\u20137 miles @ ~9:15/mi steady, last mile @ tempo effort."
+        },
+        {
+          "date": "2026-08-31",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-01",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 5 x 20m @ moderate load, 90s rest. Sled PULL: 4 x 20m same load, controlled pace. Ski Erg: 5 x 350m @ moderate-hard, 2 min rest \u2014 drive with legs first, finish with lats. Lunges: 4 x 14/leg holding 10lb kettlebell goblet-style. Burpees: 4 x 12, steady pace, chest to floor. Finish with: 3 x 8 Romanian deadlifts (hip-hinge, brace core) + 2 x 10/side single-arm row + 2 x 10 goblet squats."
+        },
+        {
+          "date": "2026-09-02",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-03",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-09-04",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "phase": "Build \u2014 Strength & Aerobic",
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-11",
+      "days": [
+        {
+          "date": "2026-09-05",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-09-06",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 6\u20137 miles @ ~9:15/mi steady, last mile @ tempo effort."
+        },
+        {
+          "date": "2026-09-07",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-08",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 5 x 20m @ moderate load, 90s rest. Sled PULL: 4 x 20m same load, controlled pace. Ski Erg: 5 x 350m @ moderate-hard, 2 min rest \u2014 drive with legs first, finish with lats. Lunges: 4 x 14/leg holding 10lb kettlebell goblet-style. Burpees: 4 x 12, steady pace, chest to floor. Finish with: 3 x 8 Romanian deadlifts (hip-hinge, brace core) + 2 x 10/side single-arm row + 2 x 10 goblet squats."
+        },
+        {
+          "date": "2026-09-09",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-10",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-09-11",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "phase": "Build \u2014 Strength & Aerobic",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-18",
+      "days": [
+        {
+          "date": "2026-09-12",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-09-13",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 10K",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 10K. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-09-14",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-15",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 5 x 20m @ moderate load, 90s rest. Sled PULL: 4 x 20m same load, controlled pace. Ski Erg: 5 x 350m @ moderate-hard, 2 min rest \u2014 drive with legs first, finish with lats. Lunges: 4 x 14/leg holding 10lb kettlebell goblet-style. Burpees: 4 x 12, steady pace, chest to floor. Finish with: 3 x 8 Romanian deadlifts (hip-hinge, brace core) + 2 x 10/side single-arm row + 2 x 10 goblet squats."
+        },
+        {
+          "date": "2026-09-16",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-17",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-09-18",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "phase": "Build \u2014 Strength & Aerobic",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-25",
+      "days": [
+        {
+          "date": "2026-09-19",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes)."
+        },
+        {
+          "date": "2026-09-20",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 10K",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 10K. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-09-21",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-22",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 5 x 20m @ moderate load, 90s rest. Sled PULL: 4 x 20m same load, controlled pace. Ski Erg: 5 x 350m @ moderate-hard, 2 min rest \u2014 drive with legs first, finish with lats. Lunges: 4 x 14/leg holding 10lb kettlebell goblet-style. Burpees: 4 x 12, steady pace, chest to floor. Finish with: 3 x 8 Romanian deadlifts (hip-hinge, brace core) + 2 x 10/side single-arm row + 2 x 10 goblet squats."
+        },
+        {
+          "date": "2026-09-23",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-24",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-09-25",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "phase": "Race-Specific / Intensity",
+      "startDate": "2026-09-26",
+      "endDate": "2026-10-02",
+      "days": [
+        {
+          "date": "2026-09-26",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "SkiErg",
+            "officialRule": "Ski Erg is done individually (not simultaneous) in doubles \u2014 one partner works while the other rests/transitions. Standard is 1000m per team.",
+            "transitionTip": "Don't sprint into the handle change \u2014 a clean, unrushed grip swap saves more time than a frantic one. Step off cleanly to the side so you don't block your partner's approach.",
+            "handoffStrategy": "Split by strength: whoever has the stronger pull does a bigger share (e.g. 600m/400m split) rather than forcing an even 500/500 if one of you is clearly faster on the erg."
+          }
+        },
+        {
+          "date": "2026-09-27",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 6\u20137 miles @ ~9:15/mi steady, last mile @ tempo effort."
+        },
+        {
+          "date": "2026-09-28",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-09-29",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 6 x 25m @ race-effort load, 2 min rest between reps. Sled PULL: 5 x 25m, sustained pull, no stopping mid-rep. Ski Erg: 4 x 500m @ hard (race effort), 2 min rest between reps. Lunges: 100m walking lunge (Hyrox distance) for time, 2 sets, rest 2 min. Burpees: 3 x 15 broad-jump burpees (race-style), 90s rest. Finish with: 3 x 8 Romanian deadlifts + farmer's carry 3 x 40m heavy dumbbells + 2 x 10 goblet squats.",
+          "raceCraft": {
+            "station": "SledPush",
+            "officialRule": "Sled must be pushed the full distance (women's doubles: typically 2x50m lengths per partner-shared total) with hands on the sled the whole time \u2014 no-rep if you let go or run alongside without contact.",
+            "transitionTip": "Low, choppy steps beat big lunging strides \u2014 a fallen or stalled sled costs way more time than a slightly slower steady push.",
+            "handoffStrategy": "Whoever's stronger on the push should take the heavier first length while legs are fresh; swap at the turnaround, not mid-length."
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-01",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-10-02",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "phase": "Race-Specific / Intensity",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-09",
+      "days": [
+        {
+          "date": "2026-10-03",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "SledPull",
+            "officialRule": "Same total distance rule as the push \u2014 rope must be pulled hand over hand, sled must move continuously in your control zone.",
+            "transitionTip": "Reset your rope grip before you pull, not after you've already started \u2014 fumbling the rope mid-pull burns real time.",
+            "handoffStrategy": "Communicate a clear count or word for when to switch if splitting reps within a length \u2014 don't guess."
+          }
+        },
+        {
+          "date": "2026-10-04",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 10 Miles",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 10 Miles. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-10-05",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-06",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 6 x 25m @ race-effort load, 2 min rest between reps. Sled PULL: 5 x 25m, sustained pull, no stopping mid-rep. Ski Erg: 4 x 500m @ hard (race effort), 2 min rest between reps. Lunges: 100m walking lunge (Hyrox distance) for time, 2 sets, rest 2 min. Burpees: 3 x 15 broad-jump burpees (race-style), 90s rest. Finish with: 3 x 8 Romanian deadlifts + farmer's carry 3 x 40m heavy dumbbells + 2 x 10 goblet squats.",
+          "raceCraft": {
+            "station": "Burpee Broad Jumps",
+            "officialRule": "Full chest-to-floor burpee plus a broad jump forward covering the required distance \u2014 shortchanging the jump distance is a no-rep.",
+            "transitionTip": "Find a rhythm you can hold for the whole distance rather than sprinting the first few and blowing up \u2014 steady beats spiky here.",
+            "handoffStrategy": "Splitting reps by distance markers (e.g. every 10m) is cleaner than by rep count \u2014 easier to track under fatigue."
+          }
+        },
+        {
+          "date": "2026-10-07",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-08",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-10-09",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "phase": "Race-Specific / Intensity",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-16",
+      "days": [
+        {
+          "date": "2026-10-10",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "Sandbag Lunges",
+            "officialRule": "100m walking lunge carrying the sandbag on the shoulders \u2014 must maintain lunge depth (back knee brushing ground) or it's a no-rep.",
+            "transitionTip": "Set the bag down calmly at the swap point \u2014 don't drop it, resetting a dropped bag costs more time than a careful handoff.",
+            "handoffStrategy": "This is often the station where the meltdown happens late-race \u2014 agree beforehand on a swap distance (e.g. every 25m) so neither of you has to grind the whole 100m solo."
+          }
+        },
+        {
+          "date": "2026-10-11",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 8\u20139 miles @ ~9:15/mi, with final 2 miles @ tempo \u2014 building the fatigue-resistance you'll need after 7 stations."
+        },
+        {
+          "date": "2026-10-12",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-13",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 6 x 25m @ race-effort load, 2 min rest between reps. Sled PULL: 5 x 25m, sustained pull, no stopping mid-rep. Ski Erg: 4 x 500m @ hard (race effort), 2 min rest between reps. Lunges: 100m walking lunge (Hyrox distance) for time, 2 sets, rest 2 min. Burpees: 3 x 15 broad-jump burpees (race-style), 90s rest. Finish with: 3 x 8 Romanian deadlifts + farmer's carry 3 x 40m heavy dumbbells + 2 x 10 goblet squats.",
+          "raceCraft": {
+            "station": "Wall Balls",
+            "officialRule": "Ball must hit the marked target height on the wall; standard reps split as agreed, must be done in the designated zone.",
+            "transitionTip": "Catch-and-reset your rhythm before your partner tags in \u2014 don't let the ball drop and roll away, it wastes real time chasing it.",
+            "handoffStrategy": "Trade off in blocks of reps (e.g. 25 each) rather than one-at-a-time \u2014 fewer transitions means less time lost to swapping position at the wall."
+          }
+        },
+        {
+          "date": "2026-10-14",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-15",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-10-16",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "phase": "Race-Specific / Intensity",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-23",
+      "days": [
+        {
+          "date": "2026-10-17",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "SkiErg",
+            "officialRule": "Ski Erg is done individually (not simultaneous) in doubles \u2014 one partner works while the other rests/transitions. Standard is 1000m per team.",
+            "transitionTip": "Don't sprint into the handle change \u2014 a clean, unrushed grip swap saves more time than a frantic one. Step off cleanly to the side so you don't block your partner's approach.",
+            "handoffStrategy": "Split by strength: whoever has the stronger pull does a bigger share (e.g. 600m/400m split) rather than forcing an even 500/500 if one of you is clearly faster on the erg."
+          }
+        },
+        {
+          "date": "2026-10-18",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 10 Miles",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, 10 Miles. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-10-19",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-20",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 6 x 25m @ race-effort load, 2 min rest between reps. Sled PULL: 5 x 25m, sustained pull, no stopping mid-rep. Ski Erg: 4 x 500m @ hard (race effort), 2 min rest between reps. Lunges: 100m walking lunge (Hyrox distance) for time, 2 sets, rest 2 min. Burpees: 3 x 15 broad-jump burpees (race-style), 90s rest. Finish with: 3 x 8 Romanian deadlifts + farmer's carry 3 x 40m heavy dumbbells + 2 x 10 goblet squats.",
+          "raceCraft": {
+            "station": "SledPush",
+            "officialRule": "Sled must be pushed the full distance (women's doubles: typically 2x50m lengths per partner-shared total) with hands on the sled the whole time \u2014 no-rep if you let go or run alongside without contact.",
+            "transitionTip": "Low, choppy steps beat big lunging strides \u2014 a fallen or stalled sled costs way more time than a slightly slower steady push.",
+            "handoffStrategy": "Whoever's stronger on the push should take the heavier first length while legs are fresh; swap at the turnaround, not mid-length."
+          }
+        },
+        {
+          "date": "2026-10-21",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-10-22",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-10-23",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 13,
+      "phase": "Peak Endurance",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-30",
+      "days": [
+        {
+          "date": "2026-10-24",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "SledPull",
+            "officialRule": "Same total distance rule as the push \u2014 rope must be pulled hand over hand, sled must move continuously in your control zone.",
+            "transitionTip": "Reset your rope grip before you pull, not after you've already started \u2014 fumbling the rope mid-pull burns real time.",
+            "handoffStrategy": "Communicate a clear count or word for when to switch if splitting reps within a length \u2014 don't guess."
+          }
+        },
+        {
+          "date": "2026-10-25",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "travel",
+          "title": "Salem Trip \u2014 Light Training",
+          "details": "Traveling \u2014 keep it light and bodyweight. 20-30 min easy movement: walk/jog, bodyweight squats, lunges, push-ups, stretching. Protect the taper-in-disguise this week, don't force a full session in a hotel gym."
+        },
+        {
+          "date": "2026-10-26",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "travel",
+          "title": "Salem Trip \u2014 Light Training",
+          "details": "Traveling \u2014 keep it light and bodyweight. 20-30 min easy movement: walk/jog, bodyweight squats, lunges, push-ups, stretching. Protect the taper-in-disguise this week, don't force a full session in a hotel gym."
+        },
+        {
+          "date": "2026-10-27",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "travel",
+          "title": "Salem Trip \u2014 Light Training",
+          "details": "Traveling \u2014 keep it light and bodyweight. 20-30 min easy movement: walk/jog, bodyweight squats, lunges, push-ups, stretching. Protect the taper-in-disguise this week, don't force a full session in a hotel gym."
+        },
+        {
+          "date": "2026-10-28",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "travel",
+          "title": "Salem Trip \u2014 Light Training",
+          "details": "Traveling \u2014 keep it light and bodyweight. 20-30 min easy movement: walk/jog, bodyweight squats, lunges, push-ups, stretching. Protect the taper-in-disguise this week, don't force a full session in a hotel gym."
+        },
+        {
+          "date": "2026-10-29",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "travel",
+          "title": "Salem Trip \u2014 Light Training",
+          "details": "Traveling \u2014 keep it light and bodyweight. 20-30 min easy movement: walk/jog, bodyweight squats, lunges, push-ups, stretching. Protect the taper-in-disguise this week, don't force a full session in a hotel gym."
+        },
+        {
+          "date": "2026-10-30",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 14,
+      "phase": "Peak Endurance",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-06",
+      "days": [
+        {
+          "date": "2026-10-31",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "Burpee Broad Jumps",
+            "officialRule": "Full chest-to-floor burpee plus a broad jump forward covering the required distance \u2014 shortchanging the jump distance is a no-rep.",
+            "transitionTip": "Find a rhythm you can hold for the whole distance rather than sprinting the first few and blowing up \u2014 steady beats spiky here.",
+            "handoffStrategy": "Splitting reps by distance markers (e.g. every 10m) is cleaner than by rep count \u2014 easier to track under fatigue."
+          }
+        },
+        {
+          "date": "2026-11-01",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 Half Marathon",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, Half Marathon. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-11-02",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-03",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 4 x 50m @ race-weight (women's doubles: ~102kg push / ~78kg pull split with partner \u2014 simulate your station share), full recovery. Sled PULL: 4 x 50m same. Ski Erg: 1000m time trial @ race pace, then 3 x 250m @ hard, 90s rest \u2014 simulate finishing station fatigue. Lunges: 100m walking lunge holding dumbbells (sandbag-lunge simulation) x 2, race pace. Burpees: Hyrox Broad Jump Burpees \u2014 80 total reps for time (scale to 60 if form breaks down). Finish with a short maintenance add-on: 2 x 8 Romanian deadlifts + 2 x 10 goblet squats \u2014 keep it brief, don't add fatigue before the half marathon.",
+          "raceCraft": {
+            "station": "Sandbag Lunges",
+            "officialRule": "100m walking lunge carrying the sandbag on the shoulders \u2014 must maintain lunge depth (back knee brushing ground) or it's a no-rep.",
+            "transitionTip": "Set the bag down calmly at the swap point \u2014 don't drop it, resetting a dropped bag costs more time than a careful handoff.",
+            "handoffStrategy": "This is often the station where the meltdown happens late-race \u2014 agree beforehand on a swap distance (e.g. every 25m) so neither of you has to grind the whole 100m solo."
+          }
+        },
+        {
+          "date": "2026-11-04",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-05",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-11-06",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 15,
+      "phase": "Peak Endurance",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-13",
+      "days": [
+        {
+          "date": "2026-11-07",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "Wall Balls",
+            "officialRule": "Ball must hit the marked target height on the wall; standard reps split as agreed, must be done in the designated zone.",
+            "transitionTip": "Catch-and-reset your rhythm before your partner tags in \u2014 don't let the ball drop and roll away, it wastes real time chasing it.",
+            "handoffStrategy": "Trade off in blocks of reps (e.g. 25 each) rather than one-at-a-time \u2014 fewer transitions means less time lost to swapping position at the wall."
+          }
+        },
+        {
+          "date": "2026-11-08",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 9\u201310 miles @ ~9:15/mi \u2014 peak volume week, this is the biggest aerobic stimulus of the whole build."
+        },
+        {
+          "date": "2026-11-09",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-10",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH: 4 x 50m @ race-weight (women's doubles: ~102kg push / ~78kg pull split with partner \u2014 simulate your station share), full recovery. Sled PULL: 4 x 50m same. Ski Erg: 1000m time trial @ race pace, then 3 x 250m @ hard, 90s rest \u2014 simulate finishing station fatigue. Lunges: 100m walking lunge holding dumbbells (sandbag-lunge simulation) x 2, race pace. Burpees: Hyrox Broad Jump Burpees \u2014 80 total reps for time (scale to 60 if form breaks down). Finish with a short maintenance add-on: 2 x 8 Romanian deadlifts + 2 x 10 goblet squats \u2014 keep it brief, don't add fatigue before the half marathon.",
+          "raceCraft": {
+            "station": "SkiErg",
+            "officialRule": "Ski Erg is done individually (not simultaneous) in doubles \u2014 one partner works while the other rests/transitions. Standard is 1000m per team.",
+            "transitionTip": "Don't sprint into the handle change \u2014 a clean, unrushed grip swap saves more time than a frantic one. Step off cleanly to the side so you don't block your partner's approach.",
+            "handoffStrategy": "Split by strength: whoever has the stronger pull does a bigger share (e.g. 600m/400m split) rather than forcing an even 500/500 if one of you is clearly faster on the erg."
+          }
+        },
+        {
+          "date": "2026-11-11",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-12",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-11-13",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 16,
+      "phase": "Sharpen & Taper",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-20",
+      "days": [
+        {
+          "date": "2026-11-14",
+          "weekday": "Saturday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "Road Race \u2014 Half Marathon",
+          "details": "RACE DAY \u2014 Lane Purser Memorial Series, Half Marathon. Run it at goal effort (not an easy jog) \u2014 these races are your key fitness checkpoints on the way to Nashville. Warm up 10 min easy + strides before the gun."
+        },
+        {
+          "date": "2026-11-15",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 9\u201310 miles @ ~9:15/mi \u2014 peak volume week, this is the biggest aerobic stimulus of the whole build."
+        },
+        {
+          "date": "2026-11-16",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-17",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH/PULL race simulation: 2 x (25m push + 25m pull) @ goal race pace, minimal rest \u2014 mimic exactly how you'll split it with Corrie on race day. Ski Erg: 500m @ goal race pace x 3, 90s rest \u2014 dial in exact pacing you'll hold on race day. Lunges: 100m walking lunge @ race pace, 1 clean set. Burpees: 40 broad-jump burpees @ race pace \u2014 sharpen, don't fatigue. Finish with a light touch: 2 x 8 Romanian deadlifts + 2 x 10 band pull-aparts.",
+          "raceCraft": {
+            "station": "SledPush",
+            "officialRule": "Sled must be pushed the full distance (women's doubles: typically 2x50m lengths per partner-shared total) with hands on the sled the whole time \u2014 no-rep if you let go or run alongside without contact.",
+            "transitionTip": "Low, choppy steps beat big lunging strides \u2014 a fallen or stalled sled costs way more time than a slightly slower steady push.",
+            "handoffStrategy": "Whoever's stronger on the push should take the heavier first length while legs are fresh; swap at the turnaround, not mid-length."
+          }
+        },
+        {
+          "date": "2026-11-18",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-19",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-11-20",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 17,
+      "phase": "Sharpen & Taper",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-27",
+      "days": [
+        {
+          "date": "2026-11-21",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "SledPull",
+            "officialRule": "Same total distance rule as the push \u2014 rope must be pulled hand over hand, sled must move continuously in your control zone.",
+            "transitionTip": "Reset your rope grip before you pull, not after you've already started \u2014 fumbling the rope mid-pull burns real time.",
+            "handoffStrategy": "Communicate a clear count or word for when to switch if splitting reps within a length \u2014 don't guess."
+          }
+        },
+        {
+          "date": "2026-11-22",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 5\u20136 miles @ ~9:15/mi with 3 x 5 min @ tempo mixed in \u2014 maintaining sharpness while backing off total volume."
+        },
+        {
+          "date": "2026-11-23",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-11-24",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "light",
+          "title": "Nashville Trip \u2014 Early AM Session",
+          "details": "Early morning before travel: 30 min easy \u2014 light jog + bodyweight strength circuit (squats, lunges, push-ups, plank). Keep it short, you're in Nashville tonight for the show."
+        },
+        {
+          "date": "2026-11-25",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "light",
+          "title": "Nashville Trip \u2014 Evening Session",
+          "details": "Evening session: 30-40 min easy jog or hotel gym bodyweight circuit. Light effort \u2014 enjoy the trip, this is recovery not training stimulus."
+        },
+        {
+          "date": "2026-11-26",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-11-27",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 18,
+      "phase": "Sharpen & Taper",
+      "startDate": "2026-11-28",
+      "endDate": "2026-12-04",
+      "days": [
+        {
+          "date": "2026-11-28",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "Burpee Broad Jumps",
+            "officialRule": "Full chest-to-floor burpee plus a broad jump forward covering the required distance \u2014 shortchanging the jump distance is a no-rep.",
+            "transitionTip": "Find a rhythm you can hold for the whole distance rather than sprinting the first few and blowing up \u2014 steady beats spiky here.",
+            "handoffStrategy": "Splitting reps by distance markers (e.g. every 10m) is cleaner than by rep count \u2014 easier to track under fatigue."
+          }
+        },
+        {
+          "date": "2026-11-29",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 5\u20136 miles @ ~9:15/mi with 3 x 5 min @ tempo mixed in \u2014 maintaining sharpness while backing off total volume."
+        },
+        {
+          "date": "2026-11-30",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-12-01",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled PUSH/PULL race simulation: 2 x (25m push + 25m pull) @ goal race pace, minimal rest \u2014 mimic exactly how you'll split it with Corrie on race day. Ski Erg: 500m @ goal race pace x 3, 90s rest \u2014 dial in exact pacing you'll hold on race day. Lunges: 100m walking lunge @ race pace, 1 clean set. Burpees: 40 broad-jump burpees @ race pace \u2014 sharpen, don't fatigue. Finish with a light touch: 2 x 8 Romanian deadlifts + 2 x 10 band pull-aparts.",
+          "raceCraft": {
+            "station": "Sandbag Lunges",
+            "officialRule": "100m walking lunge carrying the sandbag on the shoulders \u2014 must maintain lunge depth (back knee brushing ground) or it's a no-rep.",
+            "transitionTip": "Set the bag down calmly at the swap point \u2014 don't drop it, resetting a dropped bag costs more time than a careful handoff.",
+            "handoffStrategy": "This is often the station where the meltdown happens late-race \u2014 agree beforehand on a swap distance (e.g. every 25m) so neither of you has to grind the whole 100m solo."
+          }
+        },
+        {
+          "date": "2026-12-02",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        },
+        {
+          "date": "2026-12-03",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "rest",
+          "title": "Rest Day",
+          "details": "Full rest or gentle walk. Foam roll ankles/shoulders/lower back \u2014 this is the week's recovery day between three OTF sessions and station work. Sleep is the priority tonight."
+        },
+        {
+          "date": "2026-12-04",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory class as programmed by the studio \u2014 treat as your engine work. Push the rower/bike blocks with intent since ski erg and rowing overlap directly with Hyrox."
+        }
+      ]
+    },
+    {
+      "week": 19,
+      "phase": "Race Week",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-11",
+      "days": [
+        {
+          "date": "2026-12-05",
+          "weekday": "Saturday",
+          "partnerDay": true,
+          "raceDay": false,
+          "type": "partner",
+          "title": "Partner Training w/ Corrie",
+          "details": "Team session with Corrie \u2014 sync up pace and movement patterns. Mix: 2-3 mile run together @ conversational pace (practice running side by side, not racing each other), then shared strength circuit: 3 rounds of 10 walking lunges/each, 10 burpees/each, 15 wall balls or squat-to-press/each. As race day nears, layer in station hand-off drills (see race-craft notes).",
+          "raceCraft": {
+            "station": "Wall Balls",
+            "officialRule": "Ball must hit the marked target height on the wall; standard reps split as agreed, must be done in the designated zone.",
+            "transitionTip": "Catch-and-reset your rhythm before your partner tags in \u2014 don't let the ball drop and roll away, it wastes real time chasing it.",
+            "handoffStrategy": "Trade off in blocks of reps (e.g. 25 each) rather than one-at-a-time \u2014 fewer transitions means less time lost to swapping position at the wall."
+          }
+        },
+        {
+          "date": "2026-12-06",
+          "weekday": "Sunday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "run",
+          "title": "Long Run",
+          "details": "Long run, 5\u20136 miles @ ~9:15/mi with 3 x 5 min @ tempo mixed in \u2014 maintaining sharpness while backing off total volume."
+        },
+        {
+          "date": "2026-12-07",
+          "weekday": "Monday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory \u2014 light/technical class only, keep effort at 60-65%. Skip if legs feel heavy; this is not the week to chase the leaderboard."
+        },
+        {
+          "date": "2026-12-08",
+          "weekday": "Tuesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "hyrox",
+          "title": "Hyrox Station Training",
+          "details": "Hyrox station session @ ATC. Sled shakeout: 2 x 10m push, 2 x 10m pull @ light load \u2014 just groove the pattern, don't grind. Ski Erg shakeout: 2 x 200m easy, just opening up the pull pattern. Lunges: 20m easy walking lunges, shakeout only. Burpees: 5 easy reps, just move. Skip the strength add-on this week \u2014 just the stations, light effort.",
+          "raceCraft": {
+            "station": "SkiErg",
+            "officialRule": "Ski Erg is done individually (not simultaneous) in doubles \u2014 one partner works while the other rests/transitions. Standard is 1000m per team.",
+            "transitionTip": "Don't sprint into the handle change \u2014 a clean, unrushed grip swap saves more time than a frantic one. Step off cleanly to the side so you don't block your partner's approach.",
+            "handoffStrategy": "Split by strength: whoever has the stronger pull does a bigger share (e.g. 600m/400m split) rather than forcing an even 500/500 if one of you is clearly faster on the erg."
+          }
+        },
+        {
+          "date": "2026-12-09",
+          "weekday": "Wednesday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory \u2014 light/technical class only, keep effort at 60-65%. Skip if legs feel heavy; this is not the week to chase the leaderboard."
+        },
+        {
+          "date": "2026-12-10",
+          "weekday": "Thursday",
+          "partnerDay": false,
+          "raceDay": true,
+          "type": "race",
+          "title": "RACE DAY \u2014 Hyrox Nashville",
+          "details": "This is it. Women's Doubles with Corrie. Trust the training, execute the hand-off plan, manage the roxzone, and run your own race splits. Sub-1:30 is the goal \u2014 go get it."
+        },
+        {
+          "date": "2026-12-11",
+          "weekday": "Friday",
+          "partnerDay": false,
+          "raceDay": false,
+          "type": "otf",
+          "title": "Orangetheory",
+          "details": "Orangetheory \u2014 light/technical class only, keep effort at 60-65%. Skip if legs feel heavy; this is not the week to chase the leaderboard."
+        }
+      ]
+    }
+  ]
+}

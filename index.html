@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hill's Hyrox 2026</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px;margin-right:6px" xmlns="http://www.w3.org/2000/svg"><path d="M2 9V15M5 6V18M8 11V13H16V11H8ZM19 6V18M22 9V15" stroke="#2fb8ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>HILL'S <span>HYROX</span> 2026</div>
+  <div class="race-sub">Hyrox Nashville · Dec 10, 2026 · Women's Doubles w/ Corrie</div>
+</header>
+
+<nav class="tabs">
+  <a href="#week">This Week</a>
+  <a href="#readiness">Readiness</a>
+  <a href="#endofday">End of Day</a>
+  <a href="#weight">Weight</a>
+  <a href="#benchmarks">Benchmarks</a>
+  <a href="#plan">Plan</a>
+  <a href="#log">Log</a>
+  <a href="#stations">Stations</a>
+  <a href="#nutrition">Nutrition</a>
+  <a href="#races">Races</a>
+</nav>
+
+<div class="hero">
+  <div class="ring-wrap">
+    <svg width="220" height="220" viewBox="0 0 220 220">
+      <circle class="ring-track" cx="110" cy="110" r="98"></circle>
+      <circle id="ringProgress" class="ring-progress" cx="110" cy="110" r="98" stroke-dasharray="616" stroke-dashoffset="616"></circle>
+    </svg>
+    <div class="ring-center">
+      <div class="ring-days" id="daysLeftNum">—</div>
+      <div class="ring-label">Days to Race Day</div>
+      <div class="ring-sub" id="weeksLeftSub">— weeks to go</div>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div class="hero-chip">Race: <b>Dec 10, 2026</b></div>
+    <div class="hero-chip">Goal: <b>Sub-1:30</b></div>
+    <div class="hero-chip" id="phaseChip">Phase: <b>—</b></div>
+  </div>
+</div>
+
+<!-- TODAY'S MISSION -->
+<section class="block" id="today">
+  <div class="block-head">
+    <div>
+      <div class="block-eyebrow">Today · <span id="todayDateLabel">—</span></div>
+      <div class="block-title">Today's Mission</div>
+    </div>
+  </div>
+  <div class="card">
+    <span class="badge" id="missionBadge">—</span>
+    <div class="mission-title" id="missionTitle">Loading…</div>
+    <div class="mission-body" id="missionBody"></div>
+    <div id="craftBox"></div>
+    <div class="mission-adapt" id="adaptBox" style="display:none;"></div>
+    <button class="complete-btn" id="completeBtn">Mark Today Complete</button>
+  </div>
+</section>
+
+<!-- THIS WEEK -->
+<section class="block" id="week">
+  <div class="block-head">
+    <div class="block-title">Week at a Glance</div>
+    <div class="block-note" id="weekRangeLabel"></div>
+  </div>
+  <div class="week-strip" id="weekStrip"></div>
+</section>
+
+<!-- READINESS -->
+<section class="block" id="readiness">
+  <div class="block-head"><div class="block-title">Daily Readiness Check-In</div></div>
+  <div class="card">
+    <div class="meter-grid">
+      <div class="meter-row">
+        <label>Sleep Quality <span class="val" id="valSleep">3</span></label>
+        <input type="range" min="1" max="5" value="3" id="sleep">
+      </div>
+      <div class="meter-row">
+        <label>Energy / Readiness <span class="val" id="valEnergy">3</span></label>
+        <input type="range" min="1" max="5" value="3" id="energy">
+      </div>
+      <div class="meter-row">
+        <label>Soreness <span class="val" id="valSoreness">3</span></label>
+        <input type="range" min="1" max="5" value="3" id="soreness">
+      </div>
+      <div class="meter-row">
+        <label>Motivation <span class="val" id="valMotivation">3</span></label>
+        <input type="range" min="1" max="5" value="3" id="motivation">
+      </div>
+      <div class="meter-row">
+        <label>Workload / Time Crunch <span class="val" id="valWorkload">3</span></label>
+        <input type="range" min="1" max="5" value="3" id="workload">
+      </div>
+      <div class="meter-row">
+        <label>Resting Heart Rate <span class="val" id="valRestingHR"></span></label>
+        <input type="number" id="restingHR" placeholder="e.g. 58" inputmode="numeric">
+      </div>
+      <div class="meter-row">
+        <label>Sleep Hours (Apple Watch) <span class="val" id="valSleepHours"></span></label>
+        <input type="number" id="sleepHours" placeholder="e.g. 7.5" step="0.1" inputmode="decimal">
+      </div>
+      <div class="meter-row">
+        <label>Note (optional)</label>
+        <textarea id="checkinNote" placeholder="Anything worth flagging — shoulder tight, great sleep, crazy day at work..."></textarea>
+      </div>
+    </div>
+    <button class="save-btn" id="saveCheckinBtn">Save Today's Check-In</button>
+  </div>
+</section>
+
+<!-- END OF DAY LOG -->
+<section class="block" id="endofday">
+  <div class="block-head">
+    <div class="block-title">End of Day Log</div>
+    <div class="block-note">From your Apple Watch / phone</div>
+  </div>
+  <div class="card">
+    <div class="meter-grid">
+      <div class="meter-row">
+        <label>Calories</label>
+        <input type="number" id="eodCalories" placeholder="e.g. 2400" inputmode="numeric">
+      </div>
+      <div class="meter-row">
+        <label>Steps</label>
+        <input type="number" id="eodSteps" placeholder="e.g. 9500" inputmode="numeric">
+      </div>
+      <div class="meter-row">
+        <label>Workout Minutes</label>
+        <input type="number" id="eodWorkoutMin" placeholder="e.g. 55" inputmode="numeric">
+      </div>
+    </div>
+    <button class="save-btn" id="saveEodBtn">Save End of Day Log</button>
+    <div id="eodHistory" style="margin-top:14px;"></div>
+  </div>
+</section>
+
+<!-- WEIGHT -->
+<section class="block" id="weight">
+  <div class="block-head"><div class="block-title">Current Weight</div></div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-num" id="currentWeightNum">160</div>
+      <div class="stat-label">lbs · goal 145–150</div>
+      <div class="stat-delta" id="weightDelta"></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="weeksLeftNum2">—</div>
+      <div class="stat-label">Weeks to Race</div>
+      <div class="stat-delta">Dec 10, 2026</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:12px;">
+    <label style="font-size:12.5px;color:var(--text-dim);font-weight:600;">Log today's weight (lbs)</label>
+    <input type="number" id="weightInput" placeholder="e.g. 158.4" step="0.1">
+    <button class="save-btn" id="saveWeightBtn" style="margin-top:10px;">Log Weight</button>
+    <div id="weightHistory" style="margin-top:14px;"></div>
+  </div>
+</section>
+
+<!-- BENCHMARKS -->
+<section class="block" id="benchmarks">
+  <div class="block-head">
+    <div class="block-title">Fitness Benchmarks</div>
+    <div class="block-note">Baseline · Jul 2026</div>
+  </div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Benchmark</th><th>Baseline</th><th>Race Target</th></tr></thead>
+      <tbody>
+        <tr><td class="hl">5K Run</td><td>26:24</td><td>Goal-pace fitness (~8:30/mi)</td></tr>
+        <tr><td class="hl">Goblet Squat</td><td>60 lb DB</td><td>Progressive overload</td></tr>
+        <tr><td class="hl">Chest Press</td><td>100 lb</td><td>Maintain / build</td></tr>
+        <tr><td class="hl">Sled Push (102kg)</td><td>Never attempted</td><td>Confident @ race weight</td></tr>
+        <tr><td class="hl">Ski Erg</td><td>Never attempted</td><td>Sub-4:30 / 1000m pace</td></tr>
+        <tr><td class="hl">Wall Balls</td><td>—</td><td>Unbroken sets, 4kg to 2.7m</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <label style="font-size:12.5px;color:var(--text-dim);font-weight:600;">Log a new benchmark</label>
+    <input type="text" id="benchName" placeholder="e.g. 5K time, sled push time...">
+    <input type="text" id="benchValue" placeholder="e.g. 24:10" style="margin-top:8px;">
+    <button class="save-btn" id="saveBenchBtn" style="margin-top:10px;">Add Benchmark</button>
+    <div id="benchHistory" style="margin-top:14px;"></div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="block" id="plan">
+  <div class="block-head">
+    <div class="block-title">Training Plan</div>
+    <div class="block-note">19 Weeks · Women's Doubles</div>
+  </div>
+  <div id="planAccordion"></div>
+</section>
+
+<!-- LOG -->
+<section class="block" id="log">
+  <div class="block-head"><div class="block-title">Workout Log</div></div>
+  <div class="card">
+    <div id="workoutLog"><div class="empty-state">Completed sessions will show up here.</div></div>
+  </div>
+</section>
+
+<!-- STATIONS -->
+<section class="block" id="stations">
+  <div class="block-head">
+    <div class="block-title">Race Stations</div>
+    <div class="block-note">Women's Doubles · 8 × 1km run + station</div>
+  </div>
+  <div class="station-list">
+    <div class="station-item"><div class="station-num">1</div><div><div class="station-name">Ski Erg</div><div class="station-spec">1000m total · split between partners</div></div></div>
+    <div class="station-item"><div class="station-num">2</div><div><div class="station-name">Sled Push</div><div class="station-spec">50m · 102kg (225 lb) incl. sled</div></div></div>
+    <div class="station-item"><div class="station-num">3</div><div><div class="station-name">Sled Pull</div><div class="station-spec">50m · 78kg (172 lb) incl. sled</div></div></div>
+    <div class="station-item"><div class="station-num">4</div><div><div class="station-name">Burpee Broad Jumps</div><div class="station-spec">80m · bodyweight</div></div></div>
+    <div class="station-item"><div class="station-num">5</div><div><div class="station-name">Rowing</div><div class="station-spec">1000m total · split between partners</div></div></div>
+    <div class="station-item"><div class="station-num">6</div><div><div class="station-name">Farmers Carry</div><div class="station-spec">200m · 2×16kg (35 lb) per hand</div></div></div>
+    <div class="station-item"><div class="station-num">7</div><div><div class="station-name">Sandbag Lunges</div><div class="station-spec">100m · 10kg (22 lb)</div></div></div>
+    <div class="station-item"><div class="station-num">8</div><div><div class="station-name">Wall Balls</div><div class="station-spec">100 reps total · 4kg (9 lb) to 2.7m</div></div></div>
+  </div>
+  <div class="block-note" style="margin-top:12px;line-height:1.6;">Doubles weights are not halved — you and Corrie move the same load a singles athlete would, splitting reps/distance between you. Confirm exact current standards against the official HYROX rulebook closer to race day.</div>
+</section>
+
+<!-- NUTRITION -->
+<section class="block" id="nutrition">
+  <div class="block-head">
+    <div class="block-title">Nutrition</div>
+    <div class="block-note">$100/week · Fat loss while fueling training</div>
+  </div>
+  <div class="card">
+    <div class="nutri-row"><span class="nlabel">Protein target</span><span class="nval">~140–150g/day</span></div>
+    <div class="nutri-row"><span class="nlabel">Carbs</span><span class="nval">Higher on training days</span></div>
+    <div class="nutri-row"><span class="nlabel">Hydration</span><span class="nval">80–100 oz/day</span></div>
+    <div class="nutri-row"><span class="nlabel">Milk</span><span class="nval">Lactose-free only</span></div>
+    <div class="nutri-row"><span class="nlabel">Avoid</span><span class="nval">Mushrooms</span></div>
+  </div>
+  <div class="card">
+    <div class="block-eyebrow" style="margin-bottom:8px;">Habits to Upgrade</div>
+    <div class="tip-item">Alani energy drink at lunch — swap for black coffee or electrolyte packet on training days to cut the crash.</div>
+    <div class="tip-item">Your Folgers + Premier Protein combo is a solid protein boost — keep it, maybe add a second protein source at breakfast (egg whites are already doing work here).</div>
+    <div class="tip-item">Turkey sandwich / chicken salad lunches are great — add a piece of fruit or veggie side to round it out.</div>
+    <div class="tip-item">Gummy bears & ice cream sandwiches are fine in moderation — pair with a protein source (Greek yogurt, cottage cheese — lactose-free) post-workout instead of on their own.</div>
+    <div class="tip-item">Dinner pattern (ground turkey/chicken/beef + rice + veggie) is solid — keep it as your anchor meal.</div>
+  </div>
+</section>
+
+<!-- RACES -->
+<section class="block" id="races">
+  <div class="block-head">
+    <div class="block-title">Race Calendar</div>
+    <div class="block-note">Lane Purser Memorial Series + Race Day</div>
+  </div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Date</th><th>Race</th><th>Distance</th></tr></thead>
+      <tbody id="raceCalendarBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="foot">HILL'S HYROX 2026 · Women's Doubles w/ Corrie · Sub-1:30 · Let's go</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-close" id="modalClose">Close ✕</div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -38,29 +38,20 @@ body {
 }
 .wrap, header.topbar, .hero, section.block, footer.foot, .modal-overlay { position: relative; z-index: 1; }
 
-/* Dumbbell decorations flanking the countdown ring */
+/* Dumbbell background watermark — original icon, wide, side to side */
 .hero { position: relative; }
-.ring-deco {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70px;
-  height: 70px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8ZyBmaWxsPSIjMmZiOGZmIj4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwLDM4KSByb3RhdGUoLTE4KSI+CiAgICAgIDxyZWN0IHg9Ii0zNCIgeT0iLTkiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICAgICAgPHJlY3QgeD0iLTI0IiB5PSItNiIgd2lkdGg9IjciIGhlaWdodD0iMTIiIHJ4PSIyIi8+CiAgICAgIDxyZWN0IHg9Ii0xNyIgeT0iLTMiIHdpZHRoPSIzNCIgaGVpZ2h0PSI2IiByeD0iMyIvPgogICAgICA8cmVjdCB4PSIxNyIgeT0iLTYiIHdpZHRoPSI3IiBoZWlnaHQ9IjEyIiByeD0iMiIvPgogICAgICA8cmVjdCB4PSIyNCIgeT0iLTkiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxOCIgcng9IjMiLz4KICAgIDwvZz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ4LDY2KSByb3RhdGUoMTQpIj4KICAgICAgPHJlY3QgeD0iLTMwIiB5PSItOCIgd2lkdGg9IjkiIGhlaWdodD0iMTYiIHJ4PSIzIi8+CiAgICAgIDxyZWN0IHg9Ii0yMSIgeT0iLTUiIHdpZHRoPSI2IiBoZWlnaHQ9IjEwIiByeD0iMiIvPgogICAgICA8cmVjdCB4PSItMTUiIHk9Ii0yLjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSI1IiByeD0iMi41Ii8+CiAgICAgIDxyZWN0IHg9IjE1IiB5PSItNSIgd2lkdGg9IjYiIGhlaWdodD0iMTAiIHJ4PSIyIi8+CiAgICAgIDxyZWN0IHg9IjIxIiB5PSItOCIgd2lkdGg9IjkiIGhlaWdodD0iMTYiIHJ4PSIzIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=");
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgMTIwIj4KICA8cmVjdCB4PSIyIiB5PSIzNiIgd2lkdGg9IjIyIiBoZWlnaHQ9IjQ4IiByeD0iNiIgZmlsbD0iIzJmYjhmZiIvPgogIDxyZWN0IHg9IjI4IiB5PSIyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjcyIiByeD0iNiIgZmlsbD0iIzJmYjhmZiIvPgogIDxyZWN0IHg9IjQ4IiB5PSI1MCIgd2lkdGg9IjE0NCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjMmZiOGZmIi8+CiAgPHJlY3QgeD0iMTk2IiB5PSIyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjcyIiByeD0iNiIgZmlsbD0iIzJmYjhmZiIvPgogIDxyZWN0IHg9IjIxNiIgeT0iMzYiIHdpZHRoPSIyMiIgaGVpZ2h0PSI0OCIgcng9IjYiIGZpbGw9IiMyZmI4ZmYiLz4KPC9zdmc+");
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.16;
+  background-position: center 55%;
+  background-size: 92vw;
+  max-width: 100%;
+  opacity: 0.07;
   pointer-events: none;
-}
-.ring-deco.left { left: 4%; }
-.ring-deco.right { right: 4%; transform: translateY(-50%) scaleX(-1); }
-@media (max-width: 480px) {
-  .ring-deco { width: 46px; height: 46px; }
-  .ring-deco.left { left: 2%; }
-  .ring-deco.right { right: 2%; }
-}
-@media (max-width: 380px) {
-  .ring-deco { display: none; }
+  z-index: 0;
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -89,7 +80,7 @@ header.topbar {
 .brand-block { flex: 0 0 auto; }
 
 .brand {
-  font-size: 16.5px;
+  font-size: 21px;
   font-weight: 800;
   letter-spacing: 1.5px;
   color: var(--text);
